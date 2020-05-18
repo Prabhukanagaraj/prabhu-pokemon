@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 function renderEverything(){
     let allPokemonContainer = document.querySelector('#poke-container')
     allPokemonContainer.innerText = "";
-    fetchKantoPokemon();
+    fetchKPokemon();
 }
 
-function fetchKantoPokemon(){
+function fetchKPokemon(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=100')
     .then(response => response.json())
     .then(function(allpokemon){
